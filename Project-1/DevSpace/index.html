@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevSpace — a bilingual developer portfolio showcasing projects, skills and contact information.">
+  <meta name="theme-color" content="#0b1020">
+  <title>DevSpace | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="DevSpace home"><span class="logo-mark">&lt;/&gt;</span> DevSpace<span class="logo-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="language-button" id="languageToggle" aria-label="Switch language">FR</button>
+        <a class="button button-small" href="#contact" data-i18n="letsTalk">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="available">AVAILABLE FOR OPPORTUNITIES</span></p>
+        <p class="hero-kicker" data-i18n="hello">Hello, I'm</p>
+        <h1><span class="gradient-text">JIHANE BELFARAH</span><br><span data-i18n="role">Full-Stack Developer</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">I build clean, responsive and user-friendly digital experiences. I turn ideas into useful products with code and creativity.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects" data-i18n="viewWork">Explore my work <span>↗</span></a>
+          <a class="text-link" href="#contact" data-i18n="contactMe">Contact me <span>→</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>01+</strong><span data-i18n="yearsLearning">Years learning</span></div>
+          <div><strong>04</strong><span data-i18n="projectsBuilt">Projects to build</span></div>
+          <div><strong>02</strong><span data-i18n="languages">Languages</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative code illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-top"><span></span><span></span><span></span><small>developer.js</small></div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"JIHANE"</span>,
+  role: <span class="code-green">"Developer"</span>,
+  skills: [
+    <span class="code-orange">"HTML"</span>,
+    <span class="code-orange">"CSS"</span>,
+    <span class="code-orange">"JavaScript"</span>
+  ],
+  passion: <span class="code-green">"Building ideas"</span>
+};
+
+<span class="code-purple">function</span> <span class="code-blue">create</span>() {
+  <span class="code-purple">return</span> <span class="code-green">"Something great"</span>;
+}</code></pre>
+        </div>
+        <div class="floating-chip chip-one">✦ Creative thinking</div>
+        <div class="floating-chip chip-two">⌘ Clean code</div>
+        <div class="hero-glow"></div>
+      </div>
+    </section>
+
+
+
+<section class="about section container" id="about">
+  <div class="section-heading">
+    <p class="section-label" data-i18n="aboutLabel">A LITTLE ABOUT MY JOURNEY</p>
+    <h2 data-i18n="aboutTitle">Beyond the code.</h2>
+    <p class="section-subtitle" data-i18n="aboutSubtitle">
+      A little introduction to who I am and what drives me.
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-icon">✳</div>
+
+      <span class="about-tag" data-i18n="aboutTag">MY JOURNEY</span>
+
+      <h3 data-i18n="aboutCardTitle">
+        Learning today. Building for tomorrow.
+      </h3>
+
+      <p data-i18n="aboutText">
+        I'm a second-year Développement Digital student at OFPPT, passionate about web development and technology.
+      </p>
+
+      <div class="about-tags">
+        <span data-i18n="aboutTagOne">Web Development</span>
+        <span data-i18n="aboutTagTwo">Problem Solving</span>
+        <span data-i18n="aboutTagThree">Continuous Learning</span>
+      </div>
+    </div>
+
+    <div class="about-side">
+      <div class="about-note">
+        <span class="quote-mark">“</span>
+
+        <h3 data-i18n="quote">
+          Every line of code is an opportunity to learn something new.
+        </h3>
+
+        <p data-i18n="quoteAuthor">MY MINDSET</p>
+      </div>
+
+      <div class="about-info">
+        <div class="about-info-item">
+          <h4 data-i18n="aboutInfoOneTitle">Education</h4>
+          <p data-i18n="aboutInfoOneText">OFPPT · Développement Digital</p>
+        </div>
+
+        <div class="about-info-item">
+          <h4 data-i18n="aboutInfoTwoTitle">Focus</h4>
+          <p data-i18n="aboutInfoTwoText">Web Development</p>
+        </div>
+
+        <div class="about-info-item">
+          <h4 data-i18n="aboutInfoThreeTitle">Mindset</h4>
+          <p data-i18n="aboutInfoThreeText">Learn · Build · Improve</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+<section class="section container" id="skills">
+
+  <div class="section-heading">
+    <p class="eyebrow" data-i18n="skillsLabel">
+      WHAT I WORK WITH
+    </p>
+
+    <h2 data-i18n="skillsTitle">
+      My <span class="gradient-text">toolbox.</span>
+    </h2>
+
+    <p class="section-subtitle" data-i18n="skillsSubtitle">
+      Technologies and tools I use to build digital experiences.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+
+    <!-- Frontend Development -->
+    <article class="skill-card">
+      <span class="skill-symbol html-symbol">5</span>
+      <h3>HTML5</h3>
+      <p>Semantic Structure</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol css-symbol">✳</span>
+      <h3>CSS3</h3>
+      <p>Responsive Design</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol js-symbol">JS</span>
+      <h3>JavaScript</h3>
+      <p>Interactive Interfaces</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol">⚛</span>
+      <h3>React</h3>
+      <p>Component-Based UI</p>
+    </article>
+
+    <!-- Backend Development -->
+    <article class="skill-card">
+      <span class="skill-symbol">PHP</span>
+      <h3>PHP</h3>
+      <p>Backend Development</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol">Py</span>
+      <h3>Python</h3>
+      <p>Programming & Logic</p>
+    </article>
+
+    <!-- Database -->
+    <article class="skill-card">
+      <span class="skill-symbol">SQL</span>
+      <h3>MySQL</h3>
+      <p>Database Management</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol">DB</span>
+      <h3>MariaDB</h3>
+      <p>Relational Databases</p>
+    </article>
+
+    <!-- Development Tools -->
+    <article class="skill-card">
+      <span class="skill-symbol git-symbol">⌘</span>
+      <h3>Git & GitHub</h3>
+      <p>Version Control</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol">VS</span>
+      <h3>VS Code</h3>
+      <p>Code Editor</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-symbol">X</span>
+      <h3>XAMPP</h3>
+      <p>Local Development</p>
+    </article>
+
+  </div>
+</section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow" data-i18n="projectsLabel">SELECTED WORK</p><h2 data-i18n="projectsTitle">Featured <span class="gradient-text">projects.</span></h2></div>
+        <span class="project-count">01 — 03</span>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art art-one"><div class="mini-window"><div class="mini-bar"></div><div class="mini-hero"></div><div class="mini-lines"></div><div class="mini-blocks"><i></i><i></i><i></i></div></div><span class="art-label">01 / WEB</span></div>
+          <div class="project-info"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3 data-i18n="projectOne">Personal Portfolio</h3><p data-i18n="projectOneDesc">A responsive space to introduce myself and showcase my work.</p><a href="#contact" class="project-link" data-i18n="projectLink">Discuss a similar project ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-two"><div class="dashboard"><div class="dash-sidebar"></div><div class="dash-content"><i></i><i></i><i></i><b></b></div></div><span class="art-label">02 / UI</span></div>
+          <div class="project-info"><div class="project-tags"><span>HTML</span><span>CSS Grid</span></div><h3 data-i18n="projectTwo">Analytics Dashboard</h3><p data-i18n="projectTwoDesc">A clean dashboard concept focused on layout and readability.</p><a href="#contact" class="project-link" data-i18n="projectLink">Discuss a similar project ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-three"><div class="weather-card"><span>☀</span><b>24°</b><small>GOOD DAY</small><div></div></div><span class="art-label">03 / JS</span></div>
+          <div class="project-info"><div class="project-tags"><span>JavaScript</span><span>DOM</span></div><h3 data-i18n="projectThree">Weather Widget</h3><p data-i18n="projectThreeDesc">A small interface concept exploring interactive components.</p><a href="#contact" class="project-link" data-i18n="projectLink">Discuss a similar project ↗</a></div>
+        </article>
+      </div>
+      <p class="project-disclaimer" data-i18n="projectDisclaimer">Note: These are portfolio concepts. Replace them with your completed projects and real GitHub links before publishing.</p>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow" data-i18n="contactLabel">HAVE A PROJECT IN MIND?</p>
+        <h2 data-i18n="contactTitle">Let's create something <span class="gradient-text">meaningful.</span></h2>
+        <p data-i18n="contactDescription">Have an idea, a question or an opportunity? I'd be happy to hear from you.</p>
+        <a class="button" href="mailto:jihanebe71@gmail.com">jihanebe71@gmail.com <span>↗</span></a>
+        <div class="social-links"><a href="https://github.com/jihanebe71-dot" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a
+  href="https://www.linkedin.com/in/jihane-belfarah-52a393317"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  LinkedIn ↗
+</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span> DevSpace<span class="logo-dot">.</span></a><p>© <span id="year"></span> DevSpace. <span data-i18n="footer">Built with curiosity and code.</span></p><a href="#home" class="back-top" data-i18n="backTop">Back to top ↑</a></footer>
+</body>
+</html>
