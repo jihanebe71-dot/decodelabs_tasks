@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Users Management</h1>
+        <p>Manage your users easily</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add New User</h2>
+
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Users List</h2>
+            <div id="usersList"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
